@@ -1,5 +1,5 @@
 # 100-Days-CSS-Challenge
-Follow me on my journey to completing the 100 Days CSS Challenge from 100dayscss.com !
+Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 
 ## Day 1: 
 An easy start into the challenge with a custom build number with gradient.
