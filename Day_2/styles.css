@@ -1,0 +1,158 @@
+/*delete the following line if no text is used
+edit the line if you wanna use other fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    background-color: rgb(75, 160, 103);
+    border-radius: 5px;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* VARIABLES */
+
+:root {
+    --bar-line-height: 8px;
+    --bar-line-space: 14px;
+    --bar-line-offsetY: var(--bar-line-height) + var(--bar-line-space);
+    --bar-height: (3 * var(--bar-line-height)) + (2 * var(--bar-line-space));
+    --cubic-in: cubic-bezier(0.30, 1, 0.70, 1);
+    --cubic-out: cubic-bezier(1, 0.70, 1, 0.30);
+}
+
+.bars {
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 8px;
+    margin-top: 14px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px #333;
+}
+
+.bars-open .one {
+    animation: lineOne-open 0.7s ease forwards;
+}
+.bars-open .two {
+    animation: lineTwo-open 0.7s ease forwards;
+}
+.bars-open .three {
+    animation: lineThree-open 0.7s ease forwards;
+}
+
+.bars-closed .one {
+    animation: lineOne-closed 0.7s ease forwards;
+}
+.bars-closed .two {
+    animation: lineTwo-closed 0.7s ease forwards;
+}
+.bars-closed .three {
+    animation: lineThree-closed 0.7s ease forwards;
+}
+
+@keyframes lineOne-open {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(23px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(23px) rotate(45deg);
+    }
+}
+
+@keyframes lineTwo-open {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}
+
+@keyframes lineThree-open {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-23px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-23px) rotate(135deg);
+    }
+}
+
+@keyframes lineOne-closed {
+    0% {
+        transform: translateY(23px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(23px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes lineTwo-closed {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes lineThree-open {
+    0% {
+        transform: translateY(-23px) rotate(135deg);
+    }
+    50% {
+        transform: translateY(-23px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+
+
+
