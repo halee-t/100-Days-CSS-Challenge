@@ -10,3 +10,18 @@ An easy start into the challenge with a custom build number with gradient.
 Menu Icon: Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher
 <br><br>
 <img src="https://user-images.githubusercontent.com/123340415/251544859-6b1d3661-e8cc-4be6-9415-3bdc38410031.png" width="200px" height="200px">
+#### Take Away:
+Using keyframes with animations! 
+<code>
+@keyframes lineOne-open {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(23px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(23px) rotate(45deg);
+    }
+}
+</code>
