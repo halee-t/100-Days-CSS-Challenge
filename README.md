@@ -11,7 +11,7 @@ Menu Icon: Used on almost every website by now, simple but impressively animated
 <br><br>
 <img src="https://user-images.githubusercontent.com/123340415/251544859-6b1d3661-e8cc-4be6-9415-3bdc38410031.png" width="200px" height="200px">
 #### Take Away:
-Using keyframes with animations! 
+Using '@keyframes' with animations! 
 <code>
 @keyframes lineOne-open {
     0% {
@@ -25,3 +25,10 @@ Using keyframes with animations!
     }
 }
 </code>
+
+## Day 3:
+The Pyramide: Not as challenging as the real pyramids in Egypt, but the shadow path is not easy.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/46d0eba8-b9fd-4a05-8595-49d8b62453bd" width="200px" height="200px">
+### Take Away: 
+Using 'clip-path:' property to crop images and shapes! I used the circle() and polygon() methods with clip-path.
