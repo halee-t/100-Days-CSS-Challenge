@@ -36,6 +36,11 @@
     background-color: #fff;
 }
 
+:root {
+    --red: rgb(255, 52, 52);
+    --blue: rgb(44, 130, 244);
+}
+
 /* HEADING */
 .heading {
     border-radius: 3px 3px 0 0;
@@ -88,7 +93,7 @@
 }
 
 .red-key {
-    background-color: red;
+    background-color: var(--red);
     width: 12px;
     height: 3px;
     border-radius: 5px;
@@ -101,7 +106,7 @@
 }
 
 .blue-key {
-    background-color: rgb(44, 130, 244);
+    background-color: var(--blue);
     width: 12px;
     height: 3px;
     border-radius: 5px;
@@ -138,6 +143,50 @@
 
 .three {
     top: 80px;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+}
+
+/* LINES */
+
+polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.red {
+    stroke: var(--red);
+}
+
+.blue {
+    stroke: var(--blue);
+}
+
+.dots-red {
+    height: 8px;
+    width: 8px;
+    background-color: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.dot-1 {
+    top: 10px;
+    right: 20px;
+}
+
+.dot-2 {
+    top:20px;
+    left: 5px;
 }
 
 /* DAYS */
