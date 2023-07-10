@@ -1,0 +1,184 @@
+/*delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    rgb(217, 174, 94),
+    rgb(193, 106, 0)
+  );
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(244, 244, 244);
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  display: flex;
+  color: var(--brown);
+}
+
+:root {
+    --brown: rgb(112, 97, 88);
+}
+
+/* PROFILE SECTION */
+.profile {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+}
+
+.circle-1 {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    position: absolute;
+    top: 33px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--brown) transparent var(--brown) var(--brown);
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-2 {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    top: 36.5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--brown) var(--brown) var(--brown) transparent;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-1:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.circle-2:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+#name {
+    position: absolute;
+    top: 115px;
+    font-size: 16px;
+}
+
+#job {
+    position: absolute;
+    top: 150px;
+    font-size: 12px
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid var(--brown);
+    color: inherit;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--brown);
+    color: rgb(244, 244, 244);
+    cursor:pointer;
+}
+
+#follow {
+    position: absolute;
+    bottom: 70px;
+}
+
+#message {
+    position: absolute;
+    bottom: 30px;
+}
+
+/* STATISTICS SECTION */
+.statistics {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: rgba(228, 206, 197, 0.726);
+    height: 33.1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgb(203, 182, 172);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.posts {
+    margin-bottom: 1px;
+    border-radius: 0px 3px 0px 0px;
+}
+
+.likes {
+    margin-bottom: 1px;
+}
+
+.followers {
+    border-radius: 0px 0px 3px 0px;
+}
+
+.number {
+    margin: 0;
+    margin-bottom: -5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+}
+
+
+
