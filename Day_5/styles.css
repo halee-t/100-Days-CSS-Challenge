@@ -172,19 +172,16 @@ polyline {
 .dots-red {
     height: 8px;
     width: 8px;
-    background-color: var(--red);
     border-radius: 50%;
-    position: absolute;
     cursor: pointer;
     z-index: 5;
 }
 
-.dot-1 {
-    top: 10px;
-    right: 20px;
+#dotOne {
+    background-color: var(--red);
 }
 
-.dot-2 {
+#dot-2 {
     top:20px;
     left: 5px;
 }
