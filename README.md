@@ -43,6 +43,13 @@ Loading: The best are always websites that do not need a loading status. If they
 I learned that you can add another value to the 'animation: ' property called 'alternate'. This will cause the animation to go backwards as well so it looks like a loop.
 
 ## Day 5: <a id="day-5"></a>
+Statistic: In a world of numbers, it is important to be able to interpret them correctly. Beautiful statistics help to capture these data.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/793ae5b8-672c-405e-9e17-5c7dc452a3a5" width="200px" height="200px">
+### Take Away:
+I learned about the 'polyline' element! This element allows you to create line graphs for displaying data.<br>
+Note: This challenge is not finished!!
+
 
 ## Day 6: <a id="day-6"></a>
 Profile: Who of you knows how many social media profiles you have already created? For a refreshing twist, you can also create one yourself.
