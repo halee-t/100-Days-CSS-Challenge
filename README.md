@@ -1,7 +1,7 @@
 # 100-Days-CSS-Challenge
 Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 <br>
-[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4)
+[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)
  
 ## Day 1: <a id="day-1"></a>
 An easy start into the challenge with a custom build number with gradient.
@@ -41,3 +41,14 @@ Loading: The best are always websites that do not need a loading status. If they
 <img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/3fd01609-e768-468c-a618-2277474cfe27" width="200px" height="200px">
 ### Take Away: 
 I learned that you can add another value to the 'animation: ' property called 'alternate'. This will cause the animation to go backwards as well so it looks like a loop.
+
+## Day 5: <a id="day-5"></a>
+
+## Day 6: <a id="day-6"></a>
+Profile: Who of you knows how many social media profiles you have already created? For a refreshing twist, you can also create one yourself.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/a6184514-f3d6-45f3-ae37-df7e98d9ef9e" width="200px" height="200px">
+### Take Away:
+I am getting better with flex displays and flex-directions to styles sections!!
+
+
