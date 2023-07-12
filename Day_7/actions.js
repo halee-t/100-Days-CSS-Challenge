@@ -1,9 +1,15 @@
 const search = document.querySelector('.search-icon');
+const menu = document.querySelector('.menu-icon');
 
 let searchBar = document.querySelector('.search-input');
-let menuBar = document.querySelector('.nav-bar')
+let navBar = document.querySelector('.nav-bar');
+let main = document.querySelector('.center');
 
 search.addEventListener('click', function(){
     searchBar.classList.toggle('active');
-    menuBar.classList.toggle('active-2');
+})
+
+menu.addEventListener('click', function() {
+    navBar.classList.toggle('activeNav');
+    main.classList.toggle('activeCenter');
 })
