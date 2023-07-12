@@ -1,7 +1,7 @@
 # 100-Days-CSS-Challenge
 Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 <br>
-[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)
+[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)
  
 ## Day 1: <a id="day-1"></a>
 An easy start into the challenge with a custom build number with gradient.
@@ -58,4 +58,11 @@ Profile: Who of you knows how many social media profiles you have already create
 ### Take Away:
 I am getting better with flex displays and flex-directions to styles sections!!
 
+
+## Day 7: <a id="day-7"></a>
+Notifications, Search and Menu: The three cornerstones of any application? Brought together in the smallest possible space.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/c216be32-758a-4ff5-ae3a-ea1963963806" width="200px" height="200px">
+### Take Away:
+I learned a lot about javaScript in this project. I needed different menus and views to pop up when an item was clicked. I learned how to use EventListeners and querySelectors to interact with the html elements by their class names.
 
