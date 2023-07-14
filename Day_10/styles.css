@@ -11,10 +11,10 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 5px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
+  background: #505050;
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -26,4 +26,129 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --red:rgb(255, 75, 75);
+}
+
+.watch-body {
+    background-color: #262626;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid #393939;
+}
+
+.red-line {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    top: px;
+}
+
+.red-line circle {
+    stroke: var(--red);
+    stroke-width: 3;
+    stroke-dasharray: 625;
+    fill: none;
+    animation: red-line 5s linear infinite;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+}
+
+.dotted-border {
+    width: 170px;
+    height: 170px;
+    border: 2px dotted rgb(240, 234, 234);
+    border-radius: 50%;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+}
+
+.text {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(243, 235, 235);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.bottom {
+    display: flex;
+    margin-top: -60px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+p:first-of-type{
+    margin-bottom: -60px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.fa-heart {
+    color: var(--red);
+    margin-right:3px;
+    font-size: 0.8rem;
+    align-self:center;
+    animation: heart 1s infinite;
+}
+
+.heart-rate {
+    margin-right: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes red-line {
+    0% {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50.001% {
+        transform: rotate(-90deg) scaleY(-1);
+    }
+
+    100% {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(-1);
+    }
 }
