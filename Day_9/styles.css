@@ -158,104 +158,140 @@
 
 .dropBig:nth-of-type(1) {
     left: 40px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0s;
 }
 .dropBig:nth-of-type(2) {
     left: 100px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.3s;
 }
 .dropBig:nth-of-type(3) {
     left: 140px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.7s;
 }
 .dropBig:nth-of-type(4) {
     left: 200px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.4s;
 }
 .dropBig:nth-of-type(5) {
     left: 300px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0s;
 }
 .dropBig:nth-of-type(6) {
     left: 340px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.1s;
 }
 .dropBig:nth-of-type(7) {
     left: 270px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.8s;
 }
 .dropBig:nth-of-type(8) {
     left: 380px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.6s;
 }
 .dropBig:nth-of-type(9) {
     left: 230px;
-    animation: bigDrop 1.1s linear infinite;
+    animation: drop 1.1s linear infinite;
     animation-delay: 0.3s;
 }
 
 .dropMedium {
-    background-color: rgb(75, 121, 174);
+    background-color: rgb(70, 113, 167);
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 0px;
-    left:200px;
-    border-radius: 25px 0px 25px 20px;
-    z-index: 4;
-}
-.dropMedium:nth-of-type(1) {
-    left: 60px;
-    animation: mediumDrop 1.1s linear infinite;
-    animation-delay: 0.4s;
-}
-.dropMedium:nth-of-type(2) {
-    left: 100px;
-    animation: mediumDrop 1.1s linear infinite;
-    animation-delay: 0.3s;
-}
-.dropMedium:nth-of-type(3) {
-    left: 140px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0.7s;
-}
-.dropMedium:nth-of-type(4) {
     left: 200px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0.4s;
+    border-radius: 15px 0px 15px 15px;
+    z-index: 3;
 }
-.dropMedium:nth-of-type(5) {
-    left: 300px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0s;
+
+.med1 {
+    left: 50px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.99s;
 }
-.dropMedium:nth-of-type(6) {
-    left: 340px;
-    animation: bigDrop 1.1s linear infinite;
+.med2 {
+    left: 90px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.55s;
+}
+.med3 {
+    left: 127px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.06s;
+}
+.med4 {
+    left: 158px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.47s;
+}
+.med5 {
+    left: 174px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.23s;
+}
+.med6 {
+    left:242px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.83s;
+}
+.med7 {
+    left: 284px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.37s;
+}
+.med8 {
+    left: 347px;
+    animation: drop 1.2s linear infinite;
     animation-delay: 0.1s;
 }
-.dropMedium:nth-of-type(7) {
-    left: 270px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0.8s;
+.med9 {
+    left: 369px;
+    animation: drop 1.2s linear infinite;
+    animation-delay: 0.9s;
 }
-.dropMedium:nth-of-type(8) {
-    left: 380px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0.6s;
+
+.dropSmall {
+    background-color: rgb(39, 72, 112);
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 200px;
+    border-radius: 15px 0px 15px 15px;
+    z-index: 2;
 }
-.dropMedium:nth-of-type(9) {
-    left: 230px;
-    animation: bigDrop 1.1s linear infinite;
-    animation-delay: 0.3s;
+
+.small1 {
+    left:64px;
+    animation: drop 1.3s linear infinite;
+    animation-delay: 0.4s
+}
+.small2 {
+    left:172px;
+    animation: drop 1.3s linear infinite;
+    animation-delay: 0.7s
+}
+.small3 {
+    left:238px;
+    animation: drop 1.3s linear infinite;
+    animation-delay: 0.1s
+}
+.small4 {
+    left:280px;
+    animation: drop 1.3s linear infinite;
+    animation-delay: 0.9s
+}
+.small5 {
+    left:333px;
+    animation: drop 1.3s linear infinite;
+    animation-delay: 0.6s
 }
 
 
@@ -305,24 +341,7 @@ p {
 }
 
 /* ANIMATIONS */
-@keyframes bigDrop {
-    0% {
-        transform: translate3d(0px, 0px, 0)
-        scaleX(1) scaleY(1) rotate(-30deg);
-    }
-
-    85% {
-        transform: translate3d(-40px, 300px, 0)
-        scaleX(1) scaleY(1) rotate(-30deg);
-    }
-
-    100% {
-        transform: translate3d(-40px, 300px, 0)
-        scaleX(3) scaleY(0) rotate(0deg);
-    }
-}
-
-@keyframes mediumDrop {
+@keyframes drop {
     0% {
         transform: translate3d(0px, 0px, 0)
         scaleX(1) scaleY(1) rotate(-30deg);
