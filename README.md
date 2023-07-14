@@ -1,7 +1,7 @@
 # 100-Days-CSS-Challenge
 Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 <br>
-[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)
+[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)  | [Day 9](#day-9)
  
 ## Day 1: <a id="day-1"></a>
 An easy start into the challenge with a custom build number with gradient.
@@ -47,7 +47,7 @@ Statistic: In a world of numbers, it is important to be able to interpret them c
 <br><br>
 <img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/793ae5b8-672c-405e-9e17-5c7dc452a3a5" width="200px" height="200px">
 ### Take Away:
-I learned about the 'polyline' element! This element allows you to create line graphs for displaying data.<br>
+I learned about the `polyline` element! This element allows you to create line graphs for displaying data.<br>
 Note: This challenge is not finished!!
 
 
@@ -66,3 +66,10 @@ Notifications, Search and Menu: The three cornerstones of any application? Broug
 ### Take Away:
 I learned a lot about javaScript in this project. I needed different menus and views to pop up when an item was clicked. I learned how to use EventListeners and querySelectors to interact with the html elements by their class names.
 
+
+## Day 9: <a id="day-9"></a>
+Rainy Night: The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/c658ad11-1869-4ea3-84a8-9f1d1c90aab6" width="200px" height="200px">
+### Take Away:
+In this project I learned about using `overflow:hidden` to crop elements that would run over. I also learned how to delay animations with `animation-delay: 1s`
