@@ -27,3 +27,103 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.background {
+    background-color: rgb(228, 210, 180);
+    background: radial-gradient(
+        rgb(233, 222, 201),
+        rgb(228, 210, 180)
+    );
+    width: 400px;
+    height: 250px;
+}
+
+.floor {
+    background-color: #333;
+    width: 400px;
+    height: 150px;
+}
+
+.boot {
+    background: url(https://100dayscss.com/codepen/doc-martens.svg);
+    width: 150px;
+    height: 128px;
+}
+
+.left {
+    z-index: 1;
+    position: absolute;
+    top: 95px;
+    left: 60px;
+    transform: rotate(45deg);
+    animation: left-foot 2s ease-in-out infinite;
+}
+
+.right {
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    transform: rotate(-45deg);
+    animation: right-foot 2s ease-in-out infinite;
+}
+
+@keyframes left-foot {
+    0% {
+        top: 95px;
+        left: 60px;
+        transform: rotate(45deg);
+    }
+
+    25% {
+        top: 80px;
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        top: 90px;
+        left: 200px;
+        transform: rotate(-45deg);
+    }
+
+    75% {
+        top: 115px;
+        transform: rotate(10deg);
+    }
+
+    100% {
+        top: 95px;
+        left: 60px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes right-foot {
+    0% {
+        top: 90px;
+        left: 200px;
+        transform: rotate(-45deg);
+    }
+
+    25% {
+        top: 115px;
+        transform: rotate(10deg);
+    }
+
+    50% {
+        top: 95px;
+        left: 60px;
+        transform: rotate(45deg);
+    }
+
+    75% {
+        top: 80px;
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        top: 90px;
+        left: 200px;
+        transform: rotate(-45deg);
+    }
+}
