@@ -1,7 +1,7 @@
 # 100-Days-CSS-Challenge
 Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 <br>
-[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)  | [Day 9](#day-9)  | [Day 10](#day-10)
+[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)  | [Day 9](#day-9)  | [Day 10](#day-10)  |  [Day 11](#day-11) |  [Day 12](#day-12)
  
 ## Day 1: <a id="day-1"></a>
 An easy start into the challenge with a custom build number with gradient.
@@ -81,4 +81,20 @@ Watch: Classic, noble, modern or playful? What do you want your favorite watch t
 <img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/0f299688-6da1-47f5-8ad0-486e887e6a2f" width="200px" height="200px">
 ### Take Away:
 In this project I got a little more comfortable with the `svg` element and starting to see where it is useful. I got to place with the circle version of an svg and used it to make the circling red line animation.
+
+
+## Day 11: <a id="day-11"></a>
+Walking Boots: These boots are made for walking. Where are they going and for how long?
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/78a1c3bc-3358-4f33-a005-38dad25ce564" width="200px" height="200px">
+### Take Away:
+In this project I worked on keyframe animations again. This time I set more break points to try to make the animation more accurate. Room for improvement would definitely be to figure out how to make the animations smoother!
+
+
+## Day 12: <a id="day-12"></a>
+Tooltip: I'm quite sure, you already know what obsession means. But you can look it up anyways.
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/d19608df-9d95-4b56-8365-b7c3fa0fff7a" width="200px" height="200px">
+### Take Away:
+I learned how to use tooltips! There is a hover effect in this project when you go over "Obession" that brings up a tooltip definition for the word.
 
