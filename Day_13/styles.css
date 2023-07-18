@@ -21,9 +21,70 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px;
+    z-index: 1;
+}
+
+.pic {
+    width: 192.5px;
+    height: 192.5px;
+    object-fit: cover;
+}
+
+.pic:hover {
+    cursor: pointer;
+}
+
+.hover:hover {
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 2;
+}
+
+.hover:hover > .plus-circle {
+    animation: plus-circle-size 1s ;
+}
+
+.hover {
+    width: 192.5px;
+    height: 192.5px;
+    background-color: rgba(21, 21, 21, 0.371);
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(221, 82, 60);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+@keyframes plus-circle-size {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale( 0.6);
+    }
 }
