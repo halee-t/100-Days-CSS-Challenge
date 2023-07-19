@@ -1,7 +1,7 @@
 # 100-Days-CSS-Challenge
 Follow me on my journey to completing the 100 Days CSS Challenge from <a href="https://100dayscss.com/days/1/" target="_blank">100dayscss.com</a> !
 <br>
-[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)  | [Day 9](#day-9)  | [Day 10](#day-10)  |  [Day 11](#day-11) |  [Day 12](#day-12)
+[Day 1](#day-1)    |    [Day 2](#day-2)    |    [Day 3](#day-3)     |     [Day 4](#day-4) | [Day 5](#day-5) | [Day 6](#day-6)  |  [Day 7](#day-7)  | [Day 9](#day-9)  | [Day 10](#day-10)  |  [Day 11](#day-11) |  [Day 12](#day-12)  |  [Day 13](#day-13)  |  [Day 14](#day-14)
  
 ## Day 1: <a id="day-1"></a>
 An easy start into the challenge with a custom build number with gradient.
@@ -98,3 +98,13 @@ Tooltip: I'm quite sure, you already know what obsession means. But you can look
 ### Take Away:
 I learned how to use tooltips! There is a hover effect in this project when you go over "Obession" that brings up a tooltip definition for the word.
 
+
+## Day 13: <a id="day-13"></a>
+
+
+## Day 14: <a id="day-14"></a>
+Byciclopter: Which side of the card do you want to use? Either drive or fly to work in the morning?
+<br><br>
+<img src="https://github.com/halee-t/100-Days-CSS-Challenge/assets/123340415/a2f40a53-e5f9-4363-ba02-1f4ea777b559" width="200px" height="200px">
+### Take Away:
+In this project I learned a lot about `transform: ` properties. I used `translate3d()` to move the clouds and road lines across the screen in the animations, used `scaleY()` and `scaleX()` to change the size of the images, and used `rotateX()` to flip the card and images. 
