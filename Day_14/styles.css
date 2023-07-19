@@ -28,13 +28,8 @@
 .center {
     width: 300px;
     height: 175px;
-    background-color: rgb(255, 208, 39);
     border-radius: 3px;
     position: absolute;
-    perspective : 1000px; /* add this for a 3d effect */
-    transition: transform 1.5s;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 10px rgb(17, 17, 17);
 }
 
 :root {
@@ -42,28 +37,51 @@
 }
 
 .card {
+    background-color: rgb(255, 208, 39);
     width: 100%;
     height: 100%;
     text-align: center;
+    perspective : 1000px; /* add this for a 3d effect */
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 10px rgb(17, 17, 17);
 }
 
-.center:hover {
+.center:hover > .card{
     cursor: pointer;
     transform: rotateX(180deg);
     box-shadow: 5px -5px 10px rgb(17, 17, 17);
 }
 
-.center:hover > .back {
-    visibility: visible;
+.center:hover .back {
+    opacity: 1;
+    transition: opacity 1s;
+    transform:rotateX(180deg);
 }
 
-.front {
+.center:hover .front {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.center:not(:hover) .front {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.center:not(:hover) .back{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.front, .back {
     width: 175px;
     height: 150px;
     position: fixed;
     top: 12px;
     left: 60px;
     overflow: hidden;
+    background-color: rgb(255, 208, 39);
 }
 
 .bike {
@@ -127,8 +145,81 @@
 }
 
 .back {
-    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
 }
+
+.helicopter {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    animation: helicopter-fly 1s infinite alternate ease-in-out;
+}
+
+.cloud {
+    height: 3px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    position: absolute;
+    right: -30px;
+}
+
+.cloud-1 {
+    width: 20px;
+    top: 10px;
+    animation: cloud-move 2s infinite;
+}
+
+.cloud-2 {
+    width: 15px;
+    top: 18px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 1.2s;
+}
+
+.cloud-3 {
+    width: 20px;
+    top: 50px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 0.2s;
+}
+
+.cloud-4 {
+    width: 25px;
+    top: 73px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 0.8s;
+}
+
+.cloud-5 {
+    width: 18px;
+    top: 100px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 0.6s;
+}
+
+.cloud-6 {
+    width: 23px;
+    top: 120px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 0.4s;
+}
+
+.cloud-7 {
+    width: 15px;
+    top: 130px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 1s;
+}
+
+.cloud-8 {
+    width: 15px;
+    top: 18px;
+    animation: cloud-move 2s infinite;
+    animation-delay: 1.4s;
+}
+
+
 
 @keyframes bike-bob {
     0% {
@@ -146,6 +237,26 @@
 	}
     
 	100% {
-		transform: translate3d(-220px,0,0) scaleX(.8);
+		transform: translate3d(-220px,0,0) scaleX(0.8);
 	}
+}
+
+@keyframes helicopter-fly {
+    0% {
+        top: 45px;
+    }
+
+    100% {
+        top: 35px;
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        transform: translate3d(0,0,0) scaleX(1);
+    }
+
+    100% {
+        transform: translate3d(-220px, 0, 0) scaleX(0.8);
+    }
 }
