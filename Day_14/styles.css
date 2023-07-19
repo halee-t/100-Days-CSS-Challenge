@@ -11,19 +11,141 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 5px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
+  background: var(--gray);
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    width: 300px;
+    height: 175px;
+    background-color: rgb(255, 208, 39);
+    border-radius: 3px;
+    position: absolute;
+    perspective : 1000px; /* add this for a 3d effect */
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 10px rgb(17, 17, 17);
+}
+
+:root {
+    --gray: #414141;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.center:hover {
+    cursor: pointer;
+    transform: rotateX(180deg);
+    box-shadow: 5px -5px 10px rgb(17, 17, 17);
+}
+
+.center:hover > .back {
+    visibility: visible;
+}
+
+.front {
+    width: 175px;
+    height: 150px;
+    position: fixed;
+    top: 12px;
+    left: 60px;
+    overflow: hidden;
+}
+
+.bike {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    transform-origin: 50% 100%;
+    animation: bike-bob 0.5s infinite alternate;
+}
+
+.road-line {
+    height: 3px;
+    background-color: var(--gray);
+    border-radius: 2px;
+    position: absolute;
+    top: 120px;
+    right: -30px;
+}
+
+.line-1 {
+    width: 20px;
+    animation: line-move 2s infinite ease-in-out;
+}
+
+.line-2 {
+    width: 10px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 1.4s;
+}
+
+.line-3 {
+    width: 30px;
+    animation: line-move 2s infinite;
+    animation-delay: 0.2s;
+}
+
+.line-4 {
+    width: 18px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 0.4s;
+}
+.line-5 {
+    width: 12px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 0.6s;
+}
+.line-6 {
+    width: 15px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 0.8s;
+}
+.line-7 {
+    width: 10px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 1s;
+}
+.line-8 {
+    width: 20px;
+    animation: line-move 2s infinite ease-in-out;
+    animation-delay: 1.2s;
+}
+
+.back {
+    visibility: hidden;
+}
+
+@keyframes bike-bob {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1.05);
+    }
+}
+
+@keyframes line-move {
+    0% {
+		transform: translate3d(0, 0, 0) scaleX(1);
+	}
+    
+	100% {
+		transform: translate3d(-220px,0,0) scaleX(.8);
+	}
 }
